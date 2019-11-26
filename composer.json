@@ -1,0 +1,20 @@
+{
+   "name": "powerbyte/payments",
+   "description": "A simple payment SDK.",
+   "keywords": ["payment", "decidir", "sdk"],
+   "homepage": "https://github.com/jperaltaPowerbyte/powerPayments",
+   "license": "MIT",
+   "authors": [
+      {
+         "name": "Javier Alejandro Peralta",
+         "email": "javier.peralta666@gmail.com",
+         "homepage": "https://github.com/jperaltaPowerbyte"
+      }
+   ],
+   "require": {
+      "php": ">=5.3.0"
+   },
+   "autoload": {
+      "classmap": ["PowerPayments.php"]
+   }
+}
