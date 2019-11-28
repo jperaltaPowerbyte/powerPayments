@@ -1,5 +1,6 @@
 {
    "name": "powerbyte/payments",
+   "type": "library",
    "description": "A simple payment SDK.",
    "keywords": ["payment", "decidir", "sdk"],
    "homepage": "https://github.com/jperaltaPowerbyte/powerPayments",
@@ -17,6 +18,6 @@
       "decidir2/php-sdk": "^1.5"
    },
    "autoload": {
-      "classmap": ["PowerPayments.php"]
+      "classmap": ["PowerPayments.php"],
    }
 }
