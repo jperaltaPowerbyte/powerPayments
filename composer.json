@@ -12,7 +12,8 @@
       }
    ],
    "require": {
-      "php": ">=5.3.0"
+      "php": ">=5.6.0",
+      "decidir2/php-sdk": "^1.5"
    },
    "autoload": {
       "classmap": ["PowerPayments.php"]
