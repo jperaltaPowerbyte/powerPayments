@@ -21,9 +21,11 @@ class PowerPayments
         'address'           => '',
         'city'              => '',
         'state'             => '',
+        'postal_code'       => '',
         'email'             => '',
         'phone'             => '',
-        'cellphone'         => ''
+        'cellphone'         => '',
+        'comments'          => ''
     ];
     private $article = [
         'name'     => '',
