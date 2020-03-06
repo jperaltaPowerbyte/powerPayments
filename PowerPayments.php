@@ -205,4 +205,12 @@ class PowerPayments
     {
         header("Location:{$this->sdkUri}/paymentForm/{$order_id}");
     }
+
+    /**
+     * @param $order_id
+     */
+    public function paymentFirstDataFormRedirect($order_id)
+    {
+        header("Location:{$this->sdkUri}/firstData/paymentForm/{$order_id}");
+    }
 }
