@@ -229,4 +229,11 @@ class PowerPayments
     {
         header("Location:{$this->sdkUri}/securePayment/{$order_id}");
     }
+
+    public function findOrder($order_id, $gateway = 'decidir')
+    {
+        $order = $this->sendRequest("order/{$gateway}/{$order_id}", 'get');
+
+        return $order;
+    }
 }
