@@ -42,7 +42,7 @@ class PowerPayments
      * @param $token
      * @throws Exception
      */
-    public function __construct($key, $secret, $token)
+    public function __construct($key, $secret, $token = '')
     {
         $this->key = $key;
         $this->secret = $secret;
@@ -212,5 +212,17 @@ class PowerPayments
     public function paymentFirstDataFormRedirect($order_id)
     {
         header("Location:{$this->sdkUri}/firstData/paymentForm/{$order_id}");
+    }
+
+    public function cards(){
+        $cards = $this->sendRequest('cards', 'post');
+    }
+
+    /**
+     * @param $order_id
+     */
+    public function paymentLyraRedirect($order_id)
+    {
+        header("Location:{$this->sdkUri}/securePayment/{$order_id}");
     }
 }
