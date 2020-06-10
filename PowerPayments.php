@@ -15,6 +15,8 @@ class PowerPayments
     private $orderInfo = [
         'client_id'         => '',
         'articles_quantity' => 0,
+        'subtotal'      => 0,
+        'shipping_price'      => 0,
         'total_amount'      => 0,
         'name'              => '',
         'dni'               => '',
